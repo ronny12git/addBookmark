@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container{
+    background-color: white;
+    padding: 25px;
+    width: 36%;
+    min-width: 400px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.input-div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus{
+    outline: none;
+    border-color: greenyellow;
+}
+
+::placeholder{
+    font-size: 16px;
+    color: #999;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button{
+    padding: 12px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: rgba(88, 145, 2, 0.8);
+}
+
+#bookmark-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li{
+    background-color: #f0f8ff;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;              
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bookmark-list a{
+    text-decoration: none;
+    color: #2563eb;              
+    font-size: 1.1rem;
+    font-weight: 500;
+    flex: 1;                     
+    word-break: break-word;      
+}
+
+#bookmark-list a:hover{
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+#bookmark-list button{
+    background-color: #dc2626;   
+    color: white;
+    padding: 8px 16px;           
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: auto;                 
+    margin: 0;                  
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-shrink: 0;              
+}
+
+#bookmark-list button:hover{
+    background-color: #b91c1c;   
+}
